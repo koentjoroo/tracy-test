@@ -4,33 +4,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tracy Test</title>
+  <title>Extention</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Rubik', 'sans-serif']
+        }
+      }
+    }
+  </script>
+  <style>
+    details {
+      user-select: none;
+    }
+    details summary svg {
+      transition: transform ease-in 150ms;
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);  
+    }
+    summary::marker,
+    summary::-webkit-details-marker {
+      display: none;
+      content: '';
+    }
+  </style>
 </head>
-<link rel="stylesheet" href="reset.min.css" />
-<link rel="stylesheet" href="style.css">
-<style>
-  main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  ul {
-    display: flex;
-    gap: 1rem;
-  }
-</style>
 <body>
-  <main>
-    <ul>
-      <li>
-        <a href="./signup.html">Sign Up</a>
-      </li>
-      <li>
-        <a href="./login.html">Login</a>
-      </li>
-    </ul>
-  </main>
+  <div class="absolute flex items-center justify-center w-full min-h-screen p-8 bg-black/25">
+    <div role="dialog" class="bg-white overflow-hidden shadow lg rounded-xl text-gray-800 w-full max-w-[65ch]">
+      <div class="flex items-center gap-4 p-10">
+        <h2 class="flex-auto text-2xl font-medium text-center">Extention</h2>
+        <button class="transition-colors cursor-pointer">
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15 1 1M15 1 1 15"/></svg>
+        </button>
+      </div>
+      <div class="flex items-stretch justify-center gap-4 px-10 mt-12">
+        <div class="flex flex-col items-center cursor-pointer rounded-lg min-w-[128px] py-4 px-6 transition-shadow border border-transparent hover:shadow-xl hover:border-slate-50 hover:text-cyan-500">
+          <div class="flex items-center justify-center flex-auto">
+            <img src="/images/hubspot.png" title="Hubspot" alt="Hubspot" />
+          </div>
+          <p class="mt-4 text-center">Hubspot</p>
+        </div>
+        <div class="flex flex-col items-center cursor-pointer rounded-lg min-w-[128px] py-4 px-6 transition-shadow border border-transparent hover:shadow-xl hover:border-slate-50 hover:text-cyan-500">
+          <div class="flex items-center justify-center flex-auto">
+            <img src="/images/salesforce.png" title="Hubspot" alt="Hubspot" />
+          </div>
+          <p class="mt-4 text-center">Salesforce</p>
+        </div>
+        <div class="flex flex-col items-center cursor-pointer rounded-lg min-w-[128px] py-4 px-6 transition-shadow border border-transparent hover:shadow-xl hover:border-slate-50 hover:text-cyan-500">
+          <div class="flex items-center justify-center flex-auto">
+            <img src="/images/pipedrive.png" title="Hubspot" alt="Hubspot" />
+          </div>
+          <p class="mt-4 text-center">Pipedrive</p>
+        </div>
+        <div class="flex flex-col items-center cursor-pointer rounded-lg min-w-[128px] py-4 px-6 transition-shadow border border-transparent hover:shadow-xl hover:border-slate-50 hover:text-cyan-500">
+          <div class="flex items-center justify-center flex-auto">
+            <img src="/images/copper.png" title="Hubspot" alt="Hubspot" />
+          </div>
+          <p class="mt-4 text-center">Copper</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-8 px-10 mt-12">
+        <h1 class="text-4xl font-bold">Pick your favorite CRM</h1>
+        <button class="flex items-center justify-between gap-4 p-2 text-sm font-bold border-2 border-cyan-500 text-cyan-500 rounded-xl hover:border-cyan-500/75 hover:text-cyan-500/75">
+          <span class="text-red-500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" fill="none" viewBox="0 0 22 16"><path fill="currentColor" d="M21.547 2.41a2.756 2.756 0 0 0-1.94-1.939C17.888 0 11 0 11 0S4.114 0 2.392.453A2.812 2.812 0 0 0 .453 2.41C0 4.132 0 7.702 0 7.702s0 3.588.453 5.291a2.756 2.756 0 0 0 1.94 1.94c1.739.47 8.607.47 8.607.47s6.886 0 8.608-.453a2.756 2.756 0 0 0 1.939-1.939C22 11.29 22 7.72 22 7.72s.018-3.588-.453-5.31ZM8.807 11V4.404l5.727 3.298L8.807 11Z"/></svg>
+          </span>
+          <span>Watch Extention in action</span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" fill="none" viewBox="0 0 14 9"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 4.333h12M9.667 1 13 4.333 9.667 7.667"/></svg>
+          </span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-4 p-10 mt-12 bg-gray-100">
+        <details class="transition-all open:mb-4">
+          <summary class="flex items-center font-medium transition cursor-pointer hover:text-cyan-500">
+            <span class="flex-auto">What does Extention do with my CRM data?</span>
+            <span class="text-cyan-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 1 5 5 1 1"/></svg>
+            </span>
+          </summary>
+          <div class="mt-2 text-gray-400">
+            <p>Your CRM data and LinkedIn activity are confidential. Surfe does not store any of your business data, we merely pass them through between LinkedIn and your CRM.</p>
+          </div>
+        </details>
+        <details class="transition-all open:mb-4">
+          <summary class="flex items-center font-medium transition cursor-pointer hover:text-cyan-500">
+            <span class="flex-auto">Do I need special permissions?</span>
+            <span class="text-cyan-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 1 5 5 1 1"/></svg>
+            </span>
+          </summary>
+          <div class="mt-2 text-gray-400">
+            <p>Your CRM data and LinkedIn activity are confidential. Surfe does not store any of your business data, we merely pass them through between LinkedIn and your CRM.</p>
+          </div>
+        </details>
+        <details>
+          <summary class="flex items-center font-medium transition cursor-pointer hover:text-cyan-500">
+            <span class="flex-auto">I get an error, how can I get help?</span>
+            <span class="text-cyan-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 1 5 5 1 1"/></svg>
+            </span>
+          </summary>
+          <div class="mt-2 text-gray-400">
+            <p>Your CRM data and LinkedIn activity are confidential. Surfe does not store any of your business data, we merely pass them through between LinkedIn and your CRM.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
